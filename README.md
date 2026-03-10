@@ -1,0 +1,1 @@
+## Repositório criado para armazenar as atividades relacionadas à matéroa Estutura de Dados Básica I
