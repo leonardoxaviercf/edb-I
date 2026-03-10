@@ -2,21 +2,19 @@
 #include <Windows.h>
 using namespace std;
 
-int multiplicacaoCauda(int a, int b, int acumulador = 0) {
-    if (b == 0 || a == 0) {
+int multiplicacaoCauda(int a, int acumulador = 1) {
+    if (a <= 1) {
         return acumulador;
-    }
-
-    return multiplicacaoCauda(a, b - 1 , acumulador + a);
+    } 
+    return multiplicacaoCauda(a - 1, acumulador * a);
 }
 
 int main () {
     SetConsoleOutputCP(CP_UTF8);
 
-    int a = 10;
-    int b = 2;
+    int a = 5;
 
-    cout << "A multiplicação de " << a << " e " << b << " é " << multiplicacaoCauda(a, b) << endl; 
+    cout << "A multiplicação de 1 até " << a << " é " << multiplicacaoCauda(a) << endl; 
 
     return 0;
 }

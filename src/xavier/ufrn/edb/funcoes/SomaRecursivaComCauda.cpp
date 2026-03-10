@@ -2,21 +2,20 @@
 #include <Windows.h>
 using namespace std;
 
-int somaCauda(int a, int b) {
-    if (b == 0) {
-        return a;
+int somaCauda(int n, int acumulador = 0) {
+    if (n == 0) {
+        return acumulador;
     }
 
-    return somaCauda(a + 1, b - 1);
+    return somaCauda(n - 1, acumulador + n);
 }
 
 int main () {
     SetConsoleOutputCP(CP_UTF8);
 
     int a = 5;
-    int b = 3;
 
-    cout << "A soma de " << a << " e " << b << " é " << somaCauda(a, b) << endl; 
+    cout << "A soma recursiva de 1 até "<< a << " é " << somaCauda(a) << endl; 
 
     return 0;
 }
