@@ -2,7 +2,7 @@
 #include <Windows.h>
 using namespace std;
 
-int multiplicacaoIterativa(int a) {
+int fatorialIterativa(int a) {
     int acumulador = 1;
 
     while (a > 1) {
@@ -18,7 +18,7 @@ int main () {
 
     int a = 5;
 
-    cout << "O fatorial de " << a << " é " << multiplicacaoIterativa(a) << endl; 
+    cout << "O fatorial de " << a << " é " << fatorialIterativa(a) << endl; 
 
     return 0;
 }
