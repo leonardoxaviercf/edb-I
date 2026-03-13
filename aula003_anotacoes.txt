@@ -1,0 +1,48 @@
+// Analise de algoritmos - Eficácia X Eficiência
+    // Analise é realizada usando conceitos de Corretude e Complexidade
+
+    /*
+    BUsca binária X Busca sequencial
+        Melhor caso: Todos eles tem a mesma execução
+        Pior caso: É onde existem diferenças reais 
+    */
+
+   // Objetivos: Técnica empírica para comparar soluções algorítimicas
+   // Identificar vantagens e desvantaegens desta técnica
+   // Motivar análise de complexidade de algoritmos
+
+    /*
+    Por que analisar algoritmos
+        Como posso melhorar o desempenho das minhas soluções propostas?
+    
+    O programa será capaz de resolver seu problema para uma entrada muito grande?
+    */
+
+    // Análise empírica de algorítmos - Técnica para prever desempenho e comparar solições algorítmicas
+
+    /*
+    Método científico:
+        Observar algum fenômenos
+        Hipotetizar um modelo consistente com a observação
+        Prever eventos usando o modelo
+        Verificar as previsões através de experimentos
+    */
+
+    /*
+    Analise empírica
+        Solução direta: Para comparar dois algorimos, implemente-os e analise/obeserve suas execuções
+    Principais critérios de comparação: Tempo e Memória
+    Comparar execuções para entradas:
+        Representativas dentro do universo de possibilidades
+        Tamanhos/dimensões variados
+
+    Metodologia
+        Escolha o algoritmo
+            Definir critérios de comparação
+            Definir parâmetros de teste
+                Tamanho de amostras
+                Número de amostras
+            Executar os testes
+            Comparar os resultados
+                Gráficos, análises estatísticas, etc...
+    */
