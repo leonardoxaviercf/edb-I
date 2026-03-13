@@ -4,8 +4,8 @@
 using namespace std;
 using namespace chrono;
 
-int buscaSequencial (const vector<int> vetor,  int chave) {
-    for (int i = 0; i < vetor.size(); i++) {
+int buscaSequencial (const vector<int>& vetor,  int chave) {
+    for (size_t i = 0; i < vetor.size(); i++) {
         if (vetor[i] == chave) {
             return i;
         }
