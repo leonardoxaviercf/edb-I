@@ -1,0 +1,50 @@
+Como analisar o custo operacional sem experimentação
+
+Análise de complexidade de algoritmos
+    Análise do pior caso
+        Descobrir o tempo de execução do pior caso
+            Tempo de execução mais longo para qualquer entrada de tamanho n
+        Motivos
+
+    Premissa
+        O tempo total de execução de um algoritmo é determinado por dois fatores principais
+            Custo de executar uma instrução
+            Número de vezes que a operação é executada
+
+Exemplo: Busca sequencial (última posição)
+    Cada linha de execução gera um custo em função da sua frequência - onde podemos resultar em um polinômio
+    Ultimo caso:
+        Ts (n) = C1 + C2 * n + C3 + C4 * (n-1) + C5 * n 
+        Ts (n) = (C2 + C4 + C5) *  n + (C1 +  C3 - C4) - Se tornando uma função de primeiro grau
+    Não encontra:
+        // Fazer em casa
+
+Exemplo: Soma de matrizes
+    T (n) = C1 + C2 * n + C3 * n * m + C4 * n * m + C5 * n * m + C6 * n + C7 * n
+    T (n) = (C3 + C4 + C5) * n * m + (C2 + C6 + C7) * n + C1
+
+    OBS: Se n = m, temos uma função de segundo grau. Se n != m, temos um plano
+
+Exemplo: Busca binária
+    Segue "diminuindo" no fator 1/2
+        n/ 2^0
+        n/ 2^1
+        n/ 2^2
+        n/ 2^3
+        ...
+        n/ 2^(i-1), onde a i-ésima iteração é = 1
+    T (n) = C1 + (C2 + C3 + C4) * log (n) + (C2 + C3 + C4) + (C6 + C7) log (n) + C6 +     C7 + C9
+    T (n) = (C2 + C3 + C4 + C6 + C7) log (n) + (C7 + 2C + C3 + C4 + C6 + C7 + C9)
+
+Ordem de crescimento
+    Sequencia de instruções simples: Atribuição, soma, comparação...
+        constante
+    Laço simples:
+        constante
+    -
+    Laço interno dependente de externo:
+        N^2
+    Divide o espaço de busca ao meio:
+        Log n
+        OBS: Sempre que dividimos um espaço de n, temos um log n
+        

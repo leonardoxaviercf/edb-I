@@ -1,0 +1,40 @@
+Notações assintóticas
+    Notação O (big-o)
+    Notação (ômego)
+    Notação (theta)
+
+Notação big-O
+    Sejam duas funções f(n) e g(n)
+        f = O(g) se existem 
+    
+    Exemplo
+        Sejam f(n) = 9*n^2 + 10*n, e g(n) = n^3
+
+        f(n) = O(g(n))?
+
+    OBS: Quando a ordem de f(n) for maior que g(n), não será possível, pois o valor de f(n) vai crescer sempre mais rápido que g(n)
+        Exemplo: f(n) = 2*n^3 + 5*n^2
+                 g(n) = n^2
+        Nesse caso f(n) != O(g(n))
+                        != O(n^2)
+    
+    Queremos encontrar o limite, ou o a assintota superior para a pior execução possível, equiparando n com n^2
+
+    OBS: O termo dominante de um polinômio determina sua complexidade assintota
+
+Notação ômega
+    Sejam duas funções f(n) e g(n)
+    Ao contrário de big-o, queremos encontrar a melhor execução de f(n) pode se aproximar
+
+    Exemplo:
+        Sejma f(n) = 2*n^2 + 3*n 
+              g(n) = n^2
+
+    OBS: Se o f(n) for de maior ordem que g(n)
+         Não existe. Logo 
+
+Notação theta
+    Estamos buscando o caso igual, ou seja, a função que descreve o meu polinômio
+    Quase que uma função meio termo entre as duas
+
+    OBS: Quando as ordens forem iguais, normalmente isso é verdade
