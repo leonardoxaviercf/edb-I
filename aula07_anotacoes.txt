@@ -1,0 +1,10 @@
+Algorítimos de ordenação
+
+Bubble Sort - ordenação por comparação sucessivas
+
+Percorra o vetor n vezes, a cada vez "flutuando" o i-éismo maior elemento para a (n-i+1)-ésima posição do vetor
+
+Compara o elemento corrente com o seu vizinho
+    Se eles estiverem foram de ordem, troquem de posição
+
+Pior e melhor caso: O(n^2)

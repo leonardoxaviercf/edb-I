@@ -1,0 +1,12 @@
+A partir da ideia "Dividir para conquistar"
+Selecionamos um pivo, e dividimos o array em dois sub-arrays
+Vamos fazendo comparações simultaneamente em ambos os sub-arrays, e organizando-os
+
+Fazendo o incremento no início do array e fazemos o decremento no final do array
+
+Condição de parada: quando o valor do iterador do inicio e do final assumirem o mesmo valor
+
+Melhor caso:
+    Pivo é o valor mediano do array
+Pior caso:
+    Pivo é o primeiro ou o último valor do array
