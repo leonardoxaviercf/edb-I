@@ -10,3 +10,12 @@ Melhor caso:
     Pivo é o valor mediano do array
 Pior caso:
     Pivo é o primeiro ou o último valor do array
+
+Complexidade:
+    Pior caso:
+        N^2
+    Melhor caso:
+        n log(n)
+
+Fator crítico:
+    Escolha do pivo
