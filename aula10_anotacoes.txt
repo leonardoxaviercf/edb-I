@@ -1,0 +1,84 @@
+Recursão na computação
+    Estratégia para resolver grandes problemas separando em subproblemas menores e iguais
+    Uma função que se chama durante sua execução
+    Identificar um caso base, onde a solução é trivial, para garantir que a recursão não seja infinita
+    Devemos garantir que os subproblemas caminhem para o caso base
+
+Buscas
+    Estamos interessados em encontrar rapidamente um elemento de um lista
+    Busca sequencial
+        É trivial, iterando sobre o conjunto de forma sequencial, comparando todos os elementos
+        Positivo: simplicidade
+        Negativo: não escala muito bem
+        Melhor caso: 1
+        Pior caso: N
+    Busca binária
+        Difive repetidamente o conjunto de dados ao meio, descartando a metade onde o elemento buscado não pode Estratégia
+        Positivo: escala melhor
+        Negativo: os dados precisam estar ordenados
+        Melhor caso: 1
+        Pior caso: log2(n) - 1
+
+Porque analisar algorítmos
+    Comparar soluções
+    Analisar desempenho
+
+    Análise empírica de algorítmos
+        Método científico
+        Comparando através de implementação e execução, coletamos informações e analizamos as suas execuções
+        Principais critérios
+            Tempo
+            Memória
+
+        Negativo: gera incertezas devido ao ambiente externo (hardware, linguagem, tecnologia, etc) 
+
+Análise de complexidade teórica
+    Descobrir o tempo de execução do pior caso, servindo como limite superior
+    Principais fatores
+        Custo de executar uma instrução
+        Número de vezes que uma instrução é executada
+
+Ordem de crescimento
+    Instrução simples: valor constante
+    Laço simples: N (linear)
+    Dois laços: N^2
+    Dividir espaço ao meio: log2 (n)
+
+Notações assintóticas
+    Normalmente utilizamos o elemento de maior ordem para identificar as Notações
+    O (big=O)
+        Estamos gerando um teto que descreve o tempo de execução do algorítmo
+    Ômega ()
+        De forma análoga, estamos gerando um piso
+    Teta
+        Tome duas funções, a função teta vai ter o crescimento igual ao da análise, com duas constantes, que geram um piso e um teto que crescem junto com a função
+
+algorítmos de ordenação
+    Primeiro passo: verificar se existe uma relação de ordem
+    Ordem não-estrita
+        Os indivíduos são iguais
+    Ordem estrita
+        Os indivíduos são diferentes
+
+    São métodos que estabelecem essa relação
+    
+    Ordenação por seleção
+        Seleciona o menor elemento e coloca na primeira posição...
+        Seleciona o segundo menor elemento e coloca na segunda posição...
+
+        Vantagem: simples de entender e tem poucas trocas
+        Desvantagem: não escala bem e comparações custosas em estruturas grandes
+
+    Insertion sort
+        
+    Bubble sorte
+        Percorre o vetor n vezes, a cada itereação seleciona o maior elemento fazendo trocas com os elementos adjancentes até o final do conjunto
+
+    Ordenação por partição
+        Pegamos um conjunto e subdividimos em torno de um pivô, após uma primeira execução:
+            Conjunto da esquerda todos os elementos precisam ser menor que o pivô
+            Conjunto da direita todos os elementos precisam ser maior que o pivô
+            Fator crítico: a escolha do pivô, para melhorar isso, fazemos a mediana de três valores, o primeiro indice, o indice do meio e o maior indice
+            
+    Ordenação por intercalação
+        Similar ao quick sort também divide em subconjuntos
