@@ -1,0 +1,43 @@
+O que é um tipo abstrato de dado?
+
+Quais operações posso fazer com o TAD?
+	CRUD;
+	Troca de posição;
+
+Como eu faço a implementação de um TAD
+    A partir da observação de qual tipo de requesito eu quero cumprir e como devo estruturar.
+
+EX01
+    a- 4
+    b- Conjunto, pois não repete o usuário
+
+EX2
+    1. Música A
+    2. Música E
+    3. Música B
+    4. Música C
+    5. Música D
+
+EX3
+    PC01 -> PC02 -> PC04 -> PC05
+
+EX4
+    A última edição
+    Lista duplamente encadeada
+
+EX5
+    Documento C
+
+EX6
+
+EX7
+    3
+    5
+    1
+    8
+
+EX8
+    5
+    5
+    5
+    Colisão de Hash
